@@ -4,6 +4,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'Beginning Build'
+        sh 'docker build .'
       }
     }
 
