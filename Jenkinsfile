@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        echo 'Beginning Build'
+        echo 'Beginning Build ${GIT_COMMIT}'
         sh 'docker build .'
       }
     }
