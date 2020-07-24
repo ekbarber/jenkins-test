@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo "Beginning Build ${GIT_COMMIT}"
         script{
-          def img = docker.build '755448414176.dkr.ecr.us-east-1.amazonaws.com/jenkins-test:${env.BUILD_ID}'
+          def img = docker.build("755448414176.dkr.ecr.us-east-1.amazonaws.com/jenkins-test:${env.BUILD_ID}")
           img.push()
         }
 
