@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo "Beginning Build ${GIT_COMMIT}"
 
-        docker.build('755448414176.dkr.ecr.us-east-1.amazonaws.com/jenkins-test')
+        docker.build '755448414176.dkr.ecr.us-east-1.amazonaws.com/jenkins-test'
       }
     }
   }
